@@ -1,4 +1,5 @@
 from enum import Enum
+import json
 
 class ControllerType(Enum):
     KEYBOARD = "keyboard"
@@ -6,11 +7,12 @@ class ControllerType(Enum):
     GAMEPAD = "gamepad"
 
 class Controller:
-    def __init__(self, engine, config):
+    def __init__(self, engine, config = "config.json"):
+        with open(config) as f:
+            config = json.load(f)
         
-        print("Controller init:", [e.name for e in ControllerType])
-        type = input("Select Controller Type: ")
-        
+        # Import Controller type from config
+        type = config['controllerType']
         if type == "keyboard":
             self.type = ControllerType.KEYBOARD
         elif type == "rpi":
