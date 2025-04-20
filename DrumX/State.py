@@ -6,90 +6,91 @@ MENUS = {
 }
 
 class AppState:
-    
-    power = False           # State of power
-    kit = None              # Selected kit
-    playing = True          # State of playing
-    menu = None             # Menu being displayed
-    menu_hover = 0          # Index of menu being hovered
-    config = {}             # Config
-    default_scheme = {}     # Default control scheme
-    audio_engine = None     # Audio engine
+    _instance = None
 
-    def initialize(cls, config_path="config.json", engine=None):
+    def __init__(self):
+        self.power = True
+        self.kit = None
+        self.playing = True
+        self.menu = None
+        self.menu_hover = 0
+        self.config = {}
+        self.default_scheme = {}
+        self.audio_engine = None
+
+    @classmethod
+    def get_instance(cls):
+        if cls._instance is None:
+            cls._instance = cls()
+        return cls._instance
+
+    def initialize(self, config_path="config.json", engine=None):
         with open(config_path, 'r') as f:
-            cls.config = json.load(f)
+            self.config = json.load(f)
         if engine:
-            cls.set_engine(engine)
-        cls.default_scheme = cls.config['controlScheme']['default']
+            self.set_engine(engine)
+        self.default_scheme = self.config['controlScheme']['default']
 
-    @classmethod
-    def set_engine(cls, engine):
-        cls.audio_engine = engine
+    def set_engine(self, engine):
+        self.audio_engine = engine
 
-    @classmethod
-    def toggle_power(cls):
-        cls.power = not cls.power
-    
-    @classmethod
-    def get_power(cls):
-        return cls.power
-    
-    @classmethod
-    def get_kit(cls):
-        return cls.kit
-    
-    @classmethod
-    def set_kit(cls, kit):
-        cls.kit = kit
-        return
-    
-    @classmethod
-    def get_menu(cls):
-        return cls.menu
+    def toggle_power(self):
+        self.power = not self.power
 
-    @classmethod
-    def set_menu(cls, menu):
-        cls.menu = menu
-    
-    @classmethod
-    def send_command(cls, command):
-        if command in cls.default_scheme and not cls.playing:
-            print("Disable playing to send commands.")
+    def get_power(self):
+        return self.power
 
+    def get_kit(self):
+        return self.kit
 
+    def set_kit(self, kit):
+        self.kit = kit
 
-        # TODO: Fix navigation
-        if command == "PROFILE1":
-            cls.menu_hover = cls.get_menu_length() - 1 if cls.menu_hover - 1 < 0 else cls.menu_hover - 1
-            
-        elif command == "PROFILE2":
-            cls.menu_hover = cls.get_menu_length() + 1 if cls.menu_hover + 1 < 0 else cls.menu_hover + 1
-        elif command == "SELECT":
-            selected = cls.get_selected_menu_option()
-            print(f"Selected: {selected}")
-            # Add logic to switch menus or trigger actions
-        elif command == "BACK":
-            cls.set_menu("main")
-        else:
-            print(f"Command '{command}' not recognized or not handled.")
+    def get_menu(self):
+        return self.menu
 
+    def set_menu(self, menu):
+        if menu == "main":
+            pass
+        if menu == "kit":
+            pass
+        self.menu = menu
 
-    @classmethod
-    def get_menu_hover(cls):
-        return cls.menu_hover
+    def get_menu_hover(self):
+        return self.menu_hover
 
-    @classmethod
-    def set_menu_hover(cls, value):
-        cls.menu_hover = value
+    def set_menu_hover(self, value):
+        self.menu_hover = value
 
-    @classmethod
-    def get_menu_length(cls):
-        current_menu = cls.get_menu()
+    def get_menu_length(self):
+        current_menu = self.get_menu()
         return len(MENUS.get(current_menu, []))
 
-    @classmethod
-    def get_selected_menu_option(cls):
-        current_menu = cls.get_menu()
-        hover = cls.get_menu_hover()
+    def get_selected_menu_option(self):
+        current_menu = self.get_menu()
+        hover = self.get_menu_hover()
         return MENUS.get(current_menu, [])[hover]
+
+    def send_command(self, command):
+        if command in self.default_scheme and self.playing:
+            # print("Disable playing to send commands.")
+            if self.audio_engine:
+                if command.startswith("DP"):
+                    self.audio_engine.play_sound(command)
+                elif command.strtartswith("PROFILE"):
+                    self.audio_engine.set_profile()
+        elif command in self.default_scheme and not self.playing:
+            if command == "PROFILE1":
+                self.menu_hover = self.get_menu_length() - 1 if self.menu_hover - 1 < 0 else self.menu_hover - 1
+            elif command == "PROFILE2":
+                self.menu_hover = self.get_menu_length() + 1 if self.menu_hover + 1 < 0 else self.menu_hover + 1
+            elif command == "SELECT":
+                selected = self.get_selected_menu_option()
+                print(f"Selected: {selected}")
+                # Logic to switch menus or trigger actions
+            elif command == "BACK":
+                self.set_menu("main")
+            else:
+                print(f"Command '{command}' not recognized or not handled.")
+        else:
+            print("Error. How'd you get here?")

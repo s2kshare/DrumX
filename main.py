@@ -16,15 +16,19 @@ def run():
     engine = AudioEngine(bpm=80)
     controller = Controller(engine)
     inputhandler = InputHandler(engine, controller)
-    app_state = AppState()
-    app_state.initialize(config_path=os.path.join(FILEPATH, "config.json"), engine=engine)
+    
+    app = AppState.get_instance()
+    app.initialize("config.json", engine)
+    app.toggle_power()
+
+    # Load Sounds
 
     engine.load_sound("DP1", "sounds/kick.wav")
     inputhandler.start_listening()
     log(f"<{FILENAME}> Loop Started")
-    app_state.set_menu(MainMenu)
-    menu = app_state.get_menu()
-
+    app.set_menu(MainMenu)
+    menu = app.get_menu()
+    
     try:
         menu()
         while True:
