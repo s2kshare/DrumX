@@ -48,7 +48,9 @@ class AudioEngine:
         else:
             print(f"Sound '{btn_id}' not found")
 
-    def set_profile(self):
+    def set_profile(self, profile_id):
+        # with profile_id, switch to another profile to play different sounds
+        print(profile_id)
         pass
 
     def set_loop(self, btn_id):

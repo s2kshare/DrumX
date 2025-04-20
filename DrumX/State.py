@@ -77,8 +77,8 @@ class AppState:
             if self.audio_engine:
                 if command.startswith("DP"):
                     self.audio_engine.play_sound(command)
-                elif command.strtartswith("PROFILE"):
-                    self.audio_engine.set_profile()
+                elif command.startswith("PROFILE"):
+                    self.audio_engine.set_profile(command)
         elif command in self.default_scheme and not self.playing:
             if command == "PROFILE1":
                 self.menu_hover = self.get_menu_length() - 1 if self.menu_hover - 1 < 0 else self.menu_hover - 1

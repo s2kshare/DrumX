@@ -24,8 +24,13 @@ def run():
     # Load Sounds
 
     engine.load_sound("DP1", "sounds/kick.wav")
+    engine.load_sound("DP2", "sounds/HH 1.wav")
+    engine.load_sound("DP3", "sounds/SNARE 1.wav")
+
     inputhandler.start_listening()
+    
     log(f"<{FILENAME}> Loop Started")
+    
     app.set_menu(MainMenu)
     menu = app.get_menu()
     
