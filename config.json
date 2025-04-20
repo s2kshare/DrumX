@@ -19,22 +19,22 @@
             "DP15": "C",
             "DP16": "V",
 
-            "KB1": "U",
-            "KB2": "I",
-            "KB3": "O",
-            "KB4": "P",
+            "KB1": "",
+            "KB2": "",
+            "KB3": "",
+            "KB4": "",
 
             "MENU": "H",
 
-            "SELECT": "",
-            "BACK": "",
+            "SELECT": "ENTER",
+            "BACK": "BACKSPACE",
             "OPTIONS": "",
             "RECORD": "",
 
-            "PROFILE1": "",
-            "PROFILE2": "",
-            "PROFILE3": "",
-            "PROFILE4": ""
+            "PROFILE1": "U",
+            "PROFILE2": "I",
+            "PROFILE3": "O",
+            "PROFILE4": "P"
         },
         "gamepad": {
             "DP1": "1",
@@ -89,10 +89,10 @@
             "DP15": "C",
             "DP16": "V",
 
-            "KB1": "U",
-            "KB2": "I",
-            "KB3": "O",
-            "KB4": "P",
+            "KB1": "",
+            "KB2": "",
+            "KB3": "",
+            "KB4": "",
 
             "MENU": "H",
 
@@ -101,10 +101,10 @@
             "OPTIONS": "",
             "RECORD": "",
 
-            "PROFILE1": "",
-            "PROFILE2": "",
-            "PROFILE3": "",
-            "PROFILE4": ""
+            "PROFILE1": "U",
+            "PROFILE2": "I",
+            "PROFILE3": "O",
+            "PROFILE4": "P"
         },
         "default": [
             "DP1",

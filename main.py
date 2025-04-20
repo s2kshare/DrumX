@@ -16,15 +16,19 @@ def run():
     engine = AudioEngine(bpm=80)
     controller = Controller(engine)
     inputhandler = InputHandler(engine, controller)
+    app_state = AppState()
+    app_state.initialize(config_path=os.path.join(FILEPATH, "config.json"), engine=engine)
 
     engine.load_sound("DP1", "sounds/kick.wav")
     inputhandler.start_listening()
     log(f"<{FILENAME}> Loop Started")
-    AppState.set_menu(MainMenu)
+    app_state.set_menu(MainMenu)
+    menu = app_state.get_menu()
 
     try:
-        menu = AppState.get_menu()
         menu()
+        while True:
+            pass
     except KeyboardInterrupt:
         log(f"<{FILENAME}> Interrupted by user", color="red")
     finally:
