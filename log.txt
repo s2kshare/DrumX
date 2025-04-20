@@ -125,3 +125,38 @@
 [14:18:57] Pressed 's'
 [14:18:58] <main.py> Main Loop Stopped
 [14:18:58] Pressed 'c'
+[14:24:00] <main.py> Starting main.py
+[14:24:00] Controller connected: ControllerType.KEYBOARD
+[14:24:00] <main.py> Loop Started
+[14:24:01] Pressed '1'
+[14:24:01] Pressed '1'
+[14:24:05] Pressed '1'
+[14:24:05] Pressed '1'
+[14:24:05] Pressed '1'
+[14:24:05] Pressed '1'
+[14:24:05] Pressed '1'
+[14:24:06] <main.py> Main Loop Stopped
+[14:24:06] Pressed 'c'
+[14:24:54] <main.py> Starting main.py
+[14:24:54] Controller connected: ControllerType.KEYBOARD
+[14:24:54] <main.py> Loop Started
+[14:24:55] Pressed 'q'
+[14:24:57] Pressed '1'
+[14:24:57] Pressed '1'
+[14:24:58] Pressed '1'
+[14:24:58] Pressed '1'
+[14:25:01] Pressed '1'
+[14:25:01] Pressed '1'
+[14:25:01] Pressed '2'
+[14:25:01] Pressed '1'
+[14:25:02] Pressed '1'
+[14:25:02] Pressed '1'
+[14:25:03] Pressed '1'
+[14:25:04] Pressed '1'
+[14:25:04] Pressed '1'
+[14:25:04] Pressed '1'
+[14:25:05] Pressed '1'
+[14:25:05] Pressed '1'
+[14:25:06] Pressed '1'
+[14:25:06] <main.py> Main Loop Stopped
+[14:25:06] Pressed 'c'

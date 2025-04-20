@@ -23,7 +23,7 @@ class AudioEngine:
         Load a sound file and associate it with a btn_id.
         
         Parameters:
-        btn_id (str): The identifier for the sound.
+        btn_id (int): The identifier for the sound.
         filepath (str): The path to the sound file to be loaded.
         """
         sound = pygame.mixer.Sound(filepath)  # Load the sound from the given filepath
