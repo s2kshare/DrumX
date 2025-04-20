@@ -13,7 +13,7 @@ log(f"<{FILENAME}> Starting {FILENAME}")
 # Global Variables
 engine = AudioEngine(bpm=80)
 controller = Controller(engine)
-inputhandler = InputHandler(engine, None)
+inputhandler = InputHandler(engine, controller)
 
 engine.load_sound(0, "sounds/kick.wav")
 engine.set_loop(0)

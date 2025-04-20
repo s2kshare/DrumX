@@ -15,3 +15,8 @@ configuration options:
   - `gamepad`: A gamepad connected to the Raspberry Pi
 
 Example configuration file:
+
+## Fixes
+
+Currently using venv
+If not, issues with import may occur / undefined

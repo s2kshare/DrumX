@@ -20,3 +20,108 @@
 [13:29:21] <main.py> Starting main.py
 [13:29:21] <main.py> Loop Started
 [13:29:23] <main.py> Main Loop Stopped
+[13:31:32] <main.py> Starting main.py
+[13:31:46] <main.py> Starting main.py
+[13:31:46] <main.py> Loop Started
+[13:31:47] <main.py> Main Loop Stopped
+[13:33:27] <main.py> Starting main.py
+[13:33:27] Controller connected: ControllerType.KEYBOARD
+[13:33:27] <main.py> Loop Started
+[13:33:28] <main.py> Main Loop Stopped
+[13:34:25] <main.py> Starting main.py
+[13:34:25] Controller connected: ControllerType.KEYBOARD
+[13:34:25] <main.py> Loop Started
+[13:34:29] <main.py> Main Loop Stopped
+[13:35:01] <main.py> Starting main.py
+[13:35:01] Controller connected: ControllerType.KEYBOARD
+[13:35:01] <main.py> Loop Started
+[13:35:04] <main.py> Main Loop Stopped
+[13:39:07] <main.py> Starting main.py
+[13:39:07] Controller connected: ControllerType.KEYBOARD
+[13:39:07] <main.py> Loop Started
+[13:39:09] <main.py> Main Loop Stopped
+[13:58:57] <main.py> Starting main.py
+[13:58:57] Controller connected: ControllerType.KEYBOARD
+[13:58:57] <main.py> Loop Started
+[13:58:58] <main.py> Main Loop Stopped
+[13:59:19] <main.py> Starting main.py
+[13:59:23] <main.py> Starting main.py
+[13:59:32] <main.py> Starting main.py
+[13:59:32] Controller connected: ControllerType.KEYBOARD
+[13:59:32] <main.py> Loop Started
+[13:59:33] <main.py> Main Loop Stopped
+[14:03:14] <main.py> Starting main.py
+[14:03:14] Controller connected: ControllerType.KEYBOARD
+[14:03:14] <main.py> Loop Started
+[14:03:16] <main.py> Main Loop Stopped
+[14:03:25] <main.py> Starting main.py
+[14:03:25] Controller connected: ControllerType.KEYBOARD
+[14:03:25] <main.py> Loop Started
+[14:03:28] <main.py> Main Loop Stopped
+[14:04:06] <main.py> Starting main.py
+[14:04:06] Controller connected: ControllerType.KEYBOARD
+[14:04:06] <main.py> Loop Started
+[14:04:07] <main.py> Main Loop Stopped
+[14:11:00] <main.py> Starting main.py
+[14:11:00] Controller connected: ControllerType.KEYBOARD
+[14:11:00] <main.py> Loop Started
+[14:11:03] <main.py> Main Loop Stopped
+[14:12:52] <main.py> Starting main.py
+[14:12:52] Controller connected: ControllerType.KEYBOARD
+[14:12:52] <main.py> Loop Started
+[14:12:55] <main.py> Main Loop Stopped
+[14:15:59] <main.py> Starting main.py
+[14:15:59] Controller connected: ControllerType.KEYBOARD
+[14:15:59] <main.py> Loop Started
+[14:16:02] <main.py> Main Loop Stopped
+[14:16:16] <main.py> Starting main.py
+[14:16:16] Controller connected: ControllerType.KEYBOARD
+[14:16:16] <main.py> Loop Started
+[14:16:20] <main.py> Main Loop Stopped
+[14:16:30] <main.py> Starting main.py
+[14:16:30] Controller connected: ControllerType.KEYBOARD
+[14:16:30] <main.py> Loop Started
+[14:16:32] <main.py> Main Loop Stopped
+[14:16:50] <main.py> Starting main.py
+[14:16:50] Controller connected: ControllerType.KEYBOARD
+[14:16:50] <main.py> Loop Started
+[14:16:51] <main.py> Main Loop Stopped
+[14:17:11] <main.py> Starting main.py
+[14:17:11] Controller connected: ControllerType.KEYBOARD
+[14:17:11] <main.py> Loop Started
+[14:17:16] <main.py> Main Loop Stopped
+[14:17:17] <main.py> Starting main.py
+[14:17:17] Controller connected: ControllerType.KEYBOARD
+[14:17:17] <main.py> Loop Started
+[14:17:24] <main.py> Main Loop Stopped
+[14:17:37] <main.py> Starting main.py
+[14:17:37] Controller connected: ControllerType.KEYBOARD
+[14:17:37] <main.py> Loop Started
+[14:17:40] <main.py> Main Loop Stopped
+[14:18:45] <main.py> Starting main.py
+[14:18:45] Controller connected: ControllerType.KEYBOARD
+[14:18:45] <main.py> Loop Started
+[14:18:46] Pressed 'q'
+[14:18:47] Pressed 'q'
+[14:18:47] Pressed 'q'
+[14:18:48] <main.py> Main Loop Stopped
+[14:18:48] Pressed 'c'
+[14:18:51] <main.py> Starting main.py
+[14:18:51] Controller connected: ControllerType.KEYBOARD
+[14:18:51] <main.py> Loop Started
+[14:18:52] Pressed 'q'
+[14:18:53] Pressed 'q'
+[14:18:54] Pressed 'r'
+[14:18:55] Pressed '1'
+[14:18:55] Pressed '1'
+[14:18:55] Pressed '1'
+[14:18:55] Pressed '2'
+[14:18:55] Pressed '3'
+[14:18:56] Pressed 'a'
+[14:18:56] Pressed 's'
+[14:18:56] Pressed 'z'
+[14:18:57] Pressed 'd'
+[14:18:57] Pressed 'f'
+[14:18:57] Pressed 's'
+[14:18:58] <main.py> Main Loop Stopped
+[14:18:58] Pressed 'c'
