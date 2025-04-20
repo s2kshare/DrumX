@@ -1,6 +1,7 @@
 import pygame
 import time
 import threading
+from DrumX.utils import log
 
 class AudioEngine:
     """
@@ -12,6 +13,12 @@ class AudioEngine:
         """
         Initialize the AudioEngine with a specified beat per minute (BPM).
         """
+        try:
+            pygame.mixer.init()
+        except pygame.error:
+            log("System can't play audio", "red")
+            quit()
+        
         pygame.mixer.init()
         self.bpm = bpm
         self.sounds = {}  # Dictionary of btn_id -> pygame.mixer.Sound
@@ -23,7 +30,7 @@ class AudioEngine:
         Load a sound file and associate it with a btn_id.
         
         Parameters:
-        btn_id (int): The identifier for the sound.
+        btn_id (str): The identifier for the sound.
         filepath (str): The path to the sound file to be loaded.
         """
         sound = pygame.mixer.Sound(filepath)  # Load the sound from the given filepath

@@ -1,162 +1,45 @@
-[13:09:35] Main Loop Started
-[13:09:42] Main Loop Started
-[13:09:47] Main Loop Started
-[13:15:19] <main.py> Starting main.py
-[13:15:58] <main.py> Starting main.py
-[13:16:00] <main.py> Loop Started
-[13:16:03] <main.py> Main Loop Stopped
-[13:16:47] <main.py> Starting main.py
-[13:16:50] <main.py> Loop Started
-[13:16:53] <main.py> Main Loop Stopped
-[13:26:23] <main.py> Starting main.py
-[13:26:26] <main.py> Starting main.py
-[13:26:50] <main.py> Starting main.py
-[13:27:31] <main.py> Starting main.py
-[13:27:31] <main.py> Loop Started
-[13:27:34] <main.py> Main Loop Stopped
-[13:28:29] <main.py> Starting main.py
-[13:28:29] <main.py> Loop Started
-[13:28:34] <main.py> Main Loop Stopped
-[13:29:21] <main.py> Starting main.py
-[13:29:21] <main.py> Loop Started
-[13:29:23] <main.py> Main Loop Stopped
-[13:31:32] <main.py> Starting main.py
-[13:31:46] <main.py> Starting main.py
-[13:31:46] <main.py> Loop Started
-[13:31:47] <main.py> Main Loop Stopped
-[13:33:27] <main.py> Starting main.py
-[13:33:27] Controller connected: ControllerType.KEYBOARD
-[13:33:27] <main.py> Loop Started
-[13:33:28] <main.py> Main Loop Stopped
-[13:34:25] <main.py> Starting main.py
-[13:34:25] Controller connected: ControllerType.KEYBOARD
-[13:34:25] <main.py> Loop Started
-[13:34:29] <main.py> Main Loop Stopped
-[13:35:01] <main.py> Starting main.py
-[13:35:01] Controller connected: ControllerType.KEYBOARD
-[13:35:01] <main.py> Loop Started
-[13:35:04] <main.py> Main Loop Stopped
-[13:39:07] <main.py> Starting main.py
-[13:39:07] Controller connected: ControllerType.KEYBOARD
-[13:39:07] <main.py> Loop Started
-[13:39:09] <main.py> Main Loop Stopped
-[13:58:57] <main.py> Starting main.py
-[13:58:57] Controller connected: ControllerType.KEYBOARD
-[13:58:57] <main.py> Loop Started
-[13:58:58] <main.py> Main Loop Stopped
-[13:59:19] <main.py> Starting main.py
-[13:59:23] <main.py> Starting main.py
-[13:59:32] <main.py> Starting main.py
-[13:59:32] Controller connected: ControllerType.KEYBOARD
-[13:59:32] <main.py> Loop Started
-[13:59:33] <main.py> Main Loop Stopped
-[14:03:14] <main.py> Starting main.py
-[14:03:14] Controller connected: ControllerType.KEYBOARD
-[14:03:14] <main.py> Loop Started
-[14:03:16] <main.py> Main Loop Stopped
-[14:03:25] <main.py> Starting main.py
-[14:03:25] Controller connected: ControllerType.KEYBOARD
-[14:03:25] <main.py> Loop Started
-[14:03:28] <main.py> Main Loop Stopped
-[14:04:06] <main.py> Starting main.py
-[14:04:06] Controller connected: ControllerType.KEYBOARD
-[14:04:06] <main.py> Loop Started
-[14:04:07] <main.py> Main Loop Stopped
-[14:11:00] <main.py> Starting main.py
-[14:11:00] Controller connected: ControllerType.KEYBOARD
-[14:11:00] <main.py> Loop Started
-[14:11:03] <main.py> Main Loop Stopped
-[14:12:52] <main.py> Starting main.py
-[14:12:52] Controller connected: ControllerType.KEYBOARD
-[14:12:52] <main.py> Loop Started
-[14:12:55] <main.py> Main Loop Stopped
-[14:15:59] <main.py> Starting main.py
-[14:15:59] Controller connected: ControllerType.KEYBOARD
-[14:15:59] <main.py> Loop Started
-[14:16:02] <main.py> Main Loop Stopped
-[14:16:16] <main.py> Starting main.py
-[14:16:16] Controller connected: ControllerType.KEYBOARD
-[14:16:16] <main.py> Loop Started
-[14:16:20] <main.py> Main Loop Stopped
-[14:16:30] <main.py> Starting main.py
-[14:16:30] Controller connected: ControllerType.KEYBOARD
-[14:16:30] <main.py> Loop Started
-[14:16:32] <main.py> Main Loop Stopped
-[14:16:50] <main.py> Starting main.py
-[14:16:50] Controller connected: ControllerType.KEYBOARD
-[14:16:50] <main.py> Loop Started
-[14:16:51] <main.py> Main Loop Stopped
-[14:17:11] <main.py> Starting main.py
-[14:17:11] Controller connected: ControllerType.KEYBOARD
-[14:17:11] <main.py> Loop Started
-[14:17:16] <main.py> Main Loop Stopped
-[14:17:17] <main.py> Starting main.py
-[14:17:17] Controller connected: ControllerType.KEYBOARD
-[14:17:17] <main.py> Loop Started
-[14:17:24] <main.py> Main Loop Stopped
-[14:17:37] <main.py> Starting main.py
-[14:17:37] Controller connected: ControllerType.KEYBOARD
-[14:17:37] <main.py> Loop Started
-[14:17:40] <main.py> Main Loop Stopped
-[14:18:45] <main.py> Starting main.py
-[14:18:45] Controller connected: ControllerType.KEYBOARD
-[14:18:45] <main.py> Loop Started
-[14:18:46] Pressed 'q'
-[14:18:47] Pressed 'q'
-[14:18:47] Pressed 'q'
-[14:18:48] <main.py> Main Loop Stopped
-[14:18:48] Pressed 'c'
-[14:18:51] <main.py> Starting main.py
-[14:18:51] Controller connected: ControllerType.KEYBOARD
-[14:18:51] <main.py> Loop Started
-[14:18:52] Pressed 'q'
-[14:18:53] Pressed 'q'
-[14:18:54] Pressed 'r'
-[14:18:55] Pressed '1'
-[14:18:55] Pressed '1'
-[14:18:55] Pressed '1'
-[14:18:55] Pressed '2'
-[14:18:55] Pressed '3'
-[14:18:56] Pressed 'a'
-[14:18:56] Pressed 's'
-[14:18:56] Pressed 'z'
-[14:18:57] Pressed 'd'
-[14:18:57] Pressed 'f'
-[14:18:57] Pressed 's'
-[14:18:58] <main.py> Main Loop Stopped
-[14:18:58] Pressed 'c'
-[14:24:00] <main.py> Starting main.py
-[14:24:00] Controller connected: ControllerType.KEYBOARD
-[14:24:00] <main.py> Loop Started
-[14:24:01] Pressed '1'
-[14:24:01] Pressed '1'
-[14:24:05] Pressed '1'
-[14:24:05] Pressed '1'
-[14:24:05] Pressed '1'
-[14:24:05] Pressed '1'
-[14:24:05] Pressed '1'
-[14:24:06] <main.py> Main Loop Stopped
-[14:24:06] Pressed 'c'
-[14:24:54] <main.py> Starting main.py
-[14:24:54] Controller connected: ControllerType.KEYBOARD
-[14:24:54] <main.py> Loop Started
-[14:24:55] Pressed 'q'
-[14:24:57] Pressed '1'
-[14:24:57] Pressed '1'
-[14:24:58] Pressed '1'
-[14:24:58] Pressed '1'
-[14:25:01] Pressed '1'
-[14:25:01] Pressed '1'
-[14:25:01] Pressed '2'
-[14:25:01] Pressed '1'
-[14:25:02] Pressed '1'
-[14:25:02] Pressed '1'
-[14:25:03] Pressed '1'
-[14:25:04] Pressed '1'
-[14:25:04] Pressed '1'
-[14:25:04] Pressed '1'
-[14:25:05] Pressed '1'
-[14:25:05] Pressed '1'
-[14:25:06] Pressed '1'
-[14:25:06] <main.py> Main Loop Stopped
-[14:25:06] Pressed 'c'
+[18:49:45] <main.py> Starting main.py
+[18:49:45] Controller connected: ControllerType.KEYBOARD
+[18:49:45] <main.py> Loop Started
+[18:49:47] <main.py> Interrupted by user
+[18:49:47] <main.py> Main Loop Stopped
+[18:49:50] <main.py> Starting main.py
+[18:49:50] Controller connected: ControllerType.KEYBOARD
+[18:49:50] <main.py> Loop Started
+[18:49:51] <main.py> Interrupted by user
+[18:49:51] <main.py> Main Loop Stopped
+[18:50:09] <main.py> Starting main.py
+[18:50:09] Controller connected: ControllerType.KEYBOARD
+[18:50:09] <main.py> Loop Started
+[18:50:10] <main.py> Interrupted by user
+[18:50:10] <main.py> Main Loop Stopped
+[18:50:14] <main.py> Starting main.py
+[18:50:14] Controller connected: ControllerType.KEYBOARD
+[18:50:14] <main.py> Loop Started
+[18:50:15] <main.py> Interrupted by user
+[18:50:15] <main.py> Main Loop Stopped
+[18:53:00] <main.py> Starting main.py
+[18:53:00] Controller connected: ControllerType.KEYBOARD
+[18:53:00] <main.py> Loop Started
+[18:53:05] <main.py> Interrupted by user
+[18:53:05] <main.py> Main Loop Stopped
+[19:22:19] <main.py> Starting main.py
+[19:22:19] Controller connected: ControllerType.KEYBOARD
+[19:22:19] <main.py> Loop Started
+[19:22:22] <main.py> Interrupted by user
+[19:22:22] <main.py> Main Loop Stopped
+[19:24:28] <main.py> Starting main.py
+[19:24:28] Controller connected: ControllerType.KEYBOARD
+[19:24:28] <main.py> Loop Started
+[19:24:33] <main.py> Interrupted by user
+[19:24:33] <main.py> Main Loop Stopped
+[19:26:40] <main.py> Starting main.py
+[19:26:40] Controller connected: ControllerType.KEYBOARD
+[19:26:40] <main.py> Loop Started
+[19:26:42] <main.py> Interrupted by user
+[19:26:42] <main.py> Main Loop Stopped
+[19:33:52] <main.py> Starting main.py
+[19:33:52] Controller connected: ControllerType.KEYBOARD
+[19:33:52] <main.py> Loop Started
+[19:33:55] <main.py> Interrupted by user
+[19:33:55] <main.py> Main Loop Stopped
