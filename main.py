@@ -1,3 +1,4 @@
+from DrumX.Database import Database
 from DrumX.InputHandler import InputHandler
 from DrumX.AudioSuite import AudioEngine
 from DrumX.Controller import Controller
@@ -13,16 +14,17 @@ def run():
     FILEPATH = os.path.dirname(__file__)
     log(f"<{FILENAME}> Starting {FILENAME}")
 
+    # Initialize Engines
     engine = AudioEngine(bpm=80)
     controller = Controller(engine)
     inputhandler = InputHandler(engine, controller)
-    
     app = AppState.get_instance()
     app.initialize("config.json", engine)
-    app.toggle_power()
+
+    # Database Load Sequence
+    db = Database.get_instance()
 
     # Load Sounds
-
     engine.load_sound("DP1", "sounds/kick.wav")
     engine.load_sound("DP2", "sounds/HH 1.wav")
     engine.load_sound("DP3", "sounds/SNARE 1.wav")
@@ -35,7 +37,7 @@ def run():
     menu = app.get_menu()
     
     try:
-        menu()
+        # menu()
         while True:
             pass
     except KeyboardInterrupt:
@@ -43,6 +45,7 @@ def run():
     finally:
         try:
             inputhandler.stop()
+            Database.get_instance().close()
         except Exception as e:
             log(f"Error stopping input handler: {e}", color="red")
         log(f"<{FILENAME}> Main Loop Stopped")

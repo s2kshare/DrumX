@@ -3,6 +3,8 @@ from DrumX.utils import *
 from DrumX.State import AppState
 from pynput import keyboard
 
+# TODO: Refactor on_press for multiple inputs or change name
+
 class InputHandler:
     def __init__(self, engine, controller):
         self.engine = engine
@@ -31,7 +33,7 @@ class InputHandler:
             "DP9", "DP10", "DP11", "DP12", "DP13", "DP14", "DP15", "DP16",
             "KB1", "KB2", "KB3", "KB4",
             "MENU", "SELECT", "BACK", "OPTIONS", "RECORD",
-            "PROFILE1", "PROFILE2", "PROFILE3", "PROFILE4"
+            "PROFILE1", "PROFILE2", "PROFILE3", "FUNCTION"
         ]:
             mapped_key = self.controller.control_scheme.get(command)
             if input_key == mapped_key or key_name == mapped_key:

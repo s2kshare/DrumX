@@ -8,11 +8,19 @@ class AudioEngine:
     The AudioEngine class is responsible for playing and managing audio.
     It will load sounds when they are requested, and play them when requested.
     """
+    _instance = None
+
+    def get_instance(cls, bpm=120):
+        if cls._instance is None:
+            cls._instance = AudioEngine(bpm)
+        return cls._instance
 
     def __init__(self, bpm=120):
         """
         Initialize the AudioEngine with a specified beat per minute (BPM).
         """
+        if AudioEngine._instance is not None:
+            raise Exception("AudioEngine is a singleton class")
         try:
             pygame.mixer.init()
         except pygame.error:
@@ -24,6 +32,8 @@ class AudioEngine:
         self.sounds = {}  # Dictionary of btn_id -> pygame.mixer.Sound
         self.active_loops = {}  # Dictionary of btn_id -> threading.Event
         self.beat_interval = 60 / self.bpm
+    
+
 
     def load_sound(self, btn_id, filepath):
         """

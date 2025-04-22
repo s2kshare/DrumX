@@ -34,7 +34,8 @@
             "PROFILE1": "U",
             "PROFILE2": "I",
             "PROFILE3": "O",
-            "PROFILE4": "P"
+
+            "FUNCTION": "P"
         },
         "gamepad": {
             "DP1": "1",
@@ -69,7 +70,8 @@
             "PROFILE1": "",
             "PROFILE2": "",
             "PROFILE3": "",
-            "PROFILE4": ""
+
+            "FUNCTION": ""
         },
         "rpi": {
             "DP1": "1",
@@ -104,7 +106,8 @@
             "PROFILE1": "U",
             "PROFILE2": "I",
             "PROFILE3": "O",
-            "PROFILE4": "P"
+
+            "FUNCTION": "P"
         },
         "default": [
             "DP1",
@@ -135,7 +138,7 @@
             "PROFILE1",
             "PROFILE2",
             "PROFILE3",
-            "PROFILE4"
+            "FUNCTION"
         ]
     }
 }

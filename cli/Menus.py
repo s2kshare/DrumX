@@ -5,7 +5,7 @@ from DrumX.State import AppState
 REFRESH = 0.5
 default = get_default_scheme()
 MENUS = {
-    "main": ["PROFILE1", "PROFILE2", "PROFILE3", "PROFILE4"],
+    "main": ["PROFILE1", "PROFILE2", "PROFILE3", "FUNCTION"],
     "kit": ["DP1", "DP2", "DP3", "DP4"]
 }
 
@@ -39,5 +39,5 @@ def KitMenu():
         print(f"{prefix}[ {key} ]")
     
     print()
-    print("[ PROFILE4 ] FILE MANAGER\n")
+    print("[ X ] FILE MANAGER\n")
     print("<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-\n")

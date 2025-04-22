@@ -1,10 +1,5 @@
 import json
 
-MENUS = {
-    "main": ["PROFILE1", "PROFILE2", "PROFILE3", "PROFILE4"],
-    "kit": ["DP1", "DP2", "DP3", "DP4"]
-}
-
 class AppState:
     _instance = None
 
@@ -62,16 +57,8 @@ class AppState:
     def set_menu_hover(self, value):
         self.menu_hover = value
 
-    def get_menu_length(self):
-        current_menu = self.get_menu()
-        return len(MENUS.get(current_menu, []))
-
-    def get_selected_menu_option(self):
-        current_menu = self.get_menu()
-        hover = self.get_menu_hover()
-        return MENUS.get(current_menu, [])[hover]
-
     def send_command(self, command):
+        print(command)
         if command in self.default_scheme and self.playing:
             # print("Disable playing to send commands.")
             if self.audio_engine:
