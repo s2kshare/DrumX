@@ -34,10 +34,11 @@ def run():
     log(f"<{FILENAME}> Loop Started")
     
     app.set_menu(MainMenu)
-    menu = app.get_menu()
+    # menu = app.get_menu()
     
     try:
         # menu()
+        # Database.get_instance().save_kit("test")
         while True:
             pass
     except KeyboardInterrupt:

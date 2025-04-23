@@ -10,6 +10,7 @@ class AudioEngine:
     """
     _instance = None
 
+    @classmethod
     def get_instance(cls, bpm=120):
         if cls._instance is None:
             cls._instance = AudioEngine(bpm)
