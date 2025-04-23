@@ -1,4 +1,5 @@
 from DrumX.Controller import ControllerType
+from DrumX.GUI import DrumXSimpleGUI
 from DrumX.utils import *
 from DrumX.AppState import AppState
 from pynput import keyboard
@@ -53,7 +54,11 @@ class InputHandler:
             mapped_key = self.controller.control_scheme.get(command)
             if input_key == mapped_key or key_name == mapped_key:
                 self.state.send_command(command)
-                break
+                try:
+                    print(command)
+                    DrumXSimpleGUI.get_instance().toggle_button(command)
+                except:
+                    pass
 
     def stop(self):
         self.running = False

@@ -10,3 +10,23 @@
 [22:13:04] <main.py> Loop Started
 [22:13:05] <main.py> Interrupted by user
 [22:13:05] <main.py> Main Loop Stopped
+[11:05:41] <main.py> Starting main.py
+[11:05:41] Controller connected: ControllerType.KEYBOARD
+[11:05:41] <main.py> Loop Started
+[11:05:49] <main.py> Interrupted by user
+[11:05:49] <main.py> Main Loop Stopped
+[11:05:50] <main.py> Starting main.py
+[11:05:50] Controller connected: ControllerType.KEYBOARD
+[11:05:50] <main.py> Loop Started
+[11:05:51] <main.py> Interrupted by user
+[11:05:51] <main.py> Main Loop Stopped
+[11:06:13] <main.py> Starting main.py
+[11:06:13] Controller connected: ControllerType.KEYBOARD
+[11:06:13] <main.py> Loop Started
+[11:07:25] <main.py> Interrupted by user
+[11:07:25] <main.py> Main Loop Stopped
+[11:07:34] <main.py> Starting main.py
+[11:07:34] Controller connected: ControllerType.KEYBOARD
+[11:07:34] <main.py> Loop Started
+[11:07:40] <main.py> Interrupted by user
+[11:07:40] <main.py> Main Loop Stopped

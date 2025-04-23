@@ -4,6 +4,7 @@ from DrumX.AudioEngine import AudioEngine
 from DrumX.Controller import Controller
 from DrumX.AppState import AppState
 from DrumX.utils import log
+from DrumX.GUI import DrumXSimpleGUI
 
 import os
 import argparse
@@ -40,6 +41,8 @@ def run():
     log(f"<{FILENAME}> Loop Started")
     
     try:
+        simple_gui = DrumXSimpleGUI()
+        simple_gui.run()
         while True:
             pass
     except KeyboardInterrupt:
@@ -59,8 +62,8 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
 
-    if args.gui:
-        from DrumX.GUI import GUI
-        gui = GUI()
-        gui.run()
+    # if args.gui:
+        # from DrumX.GUI.GUI import GUI
+        # gui = GUI()
+        # gui.run()
     run()
