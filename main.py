@@ -4,7 +4,10 @@ from DrumX.AudioEngine import AudioEngine
 from DrumX.Controller import Controller
 from DrumX.AppState import AppState
 from DrumX.utils import log
+
 import os
+import argparse
+import sys
 
 def run():
     FILENAME = os.path.basename(__file__)
@@ -50,4 +53,14 @@ def run():
         log(f"<{FILENAME}> Main Loop Stopped")
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="DrumX Drumpad Application")
+    parser.add_argument("--debug", action="store_true", help="Enable debug mode")
+    parser.add_argument("--gui", action="store_true", help="Run the app with a GUI interface")
+
+    args = parser.parse_args()
+
+    if args.gui:
+        from DrumX.GUI import GUI
+        gui = GUI()
+        gui.run()
     run()
