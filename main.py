@@ -41,7 +41,7 @@ def run():
     log(f"<{FILENAME}> Loop Started")
     
     try:
-        simple_gui = DrumXSimpleGUI()
+        simple_gui = DrumXSimpleGUI.get_instance()
         simple_gui.run()
         while True:
             pass

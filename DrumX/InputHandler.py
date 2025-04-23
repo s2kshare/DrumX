@@ -21,13 +21,31 @@ class InputHandler:
     
     def on_release(self, key):
         try:
+            input_key = key.char.upper()
+        except AttributeError:
+            input_key = None
+
+        try:
             key_name = key.name.upper()
         except AttributeError:
             key_name = None
-        print(key)
 
         if self.holdingFunction and key == "FUNCTION":
             self.holdingFunction = False
+        
+        for command in [
+            "DP1", "DP2", "DP3", "DP4", "DP5", "DP6", "DP7", "DP8",
+            "DP9", "DP10", "DP11", "DP12", "DP13", "DP14", "DP15", "DP16",
+            "KB1", "KB2", "KB3", "KB4",
+            "MENU", "SELECT", "BACK", "OPTIONS", "RECORD",
+            "PROFILE1", "PROFILE2", "PROFILE3", "FUNCTION"
+        ]:
+            mapped_key = self.controller.control_scheme.get(command)
+            if input_key == mapped_key or key_name == mapped_key:
+                try:
+                    DrumXSimpleGUI.get_instance().toggle_button(command)
+                except:
+                    pass
 
 
     def on_press(self, key):
@@ -55,7 +73,6 @@ class InputHandler:
             if input_key == mapped_key or key_name == mapped_key:
                 self.state.send_command(command)
                 try:
-                    print(command)
                     DrumXSimpleGUI.get_instance().toggle_button(command)
                 except:
                     pass

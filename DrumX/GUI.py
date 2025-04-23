@@ -1,5 +1,7 @@
 from tkinter import *
 
+# TODO: Capture close event to stop the audio engine
+
 class DrumXSimpleGUI:
     _instance = None
 
@@ -43,7 +45,7 @@ class DrumXSimpleGUI:
             btn = self.buttons[btn_id]
             current_color = btn.cget("bg")
             new_color = "red" if current_color != "red" else "black"
-            btn.config(bg=new_color)
+            self.window.after(0, lambda: btn.config(bg=new_color))
 
     def run(self):
         self.window.mainloop()

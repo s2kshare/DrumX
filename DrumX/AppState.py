@@ -58,7 +58,6 @@ class AppState:
         self.menu_hover = value
 
     def send_command(self, command):
-        print(command)
         if command in self.default_scheme and self.playing:
             # print("Disable playing to send commands.")
             if self.audio_engine:
