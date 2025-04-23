@@ -2,6 +2,7 @@ import pygame
 import time
 import threading
 from DrumX.utils import log
+from DrumX.Database import Database
 
 class AudioEngine:
     """
@@ -46,6 +47,11 @@ class AudioEngine:
         """
         sound = pygame.mixer.Sound(filepath)  # Load the sound from the given filepath
         self.sounds[btn_id] = sound  # Store the sound in the dictionary with its btn_id
+
+    def load_last_session_kit(self):
+        kit, profiles = Database.get_instance().load_initial_data()
+        print(kit, profiles)
+
 
     def play_sound(self, btn_id):
         """

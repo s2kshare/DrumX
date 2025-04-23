@@ -1,6 +1,6 @@
 from DrumX.Controller import ControllerType
 from DrumX.utils import *
-from DrumX.State import AppState
+from DrumX.AppState import AppState
 from pynput import keyboard
 
 # TODO: Refactor on_press for multiple inputs or change name
@@ -11,11 +11,23 @@ class InputHandler:
         self.controller = controller
         self.running = True
         self.state = AppState.get_instance()
+        self.holdingFunction = False
 
     def start_listening(self):
         if self.controller.type == ControllerType.KEYBOARD:
-            listener = keyboard.Listener(on_press=self.on_press)
+            listener = keyboard.Listener(on_press=self.on_press, on_release=self.on_release)
             listener.start()
+    
+    def on_release(self, key):
+        try:
+            key_name = key.name.upper()
+        except AttributeError:
+            key_name = None
+        print(key)
+
+        if self.holdingFunction and key == "FUNCTION":
+            self.holdingFunction = False
+
 
     def on_press(self, key):
         try:
@@ -27,6 +39,9 @@ class InputHandler:
             key_name = key.name.upper()
         except AttributeError:
             key_name = None
+
+        if key == "FUNCTION":
+            self.holdingFunction = True
 
         for command in [
             "DP1", "DP2", "DP3", "DP4", "DP5", "DP6", "DP7", "DP8",

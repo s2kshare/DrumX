@@ -1,13 +1,10 @@
 from DrumX.Database import Database
 from DrumX.InputHandler import InputHandler
-from DrumX.AudioSuite import AudioEngine
+from DrumX.AudioEngine import AudioEngine
 from DrumX.Controller import Controller
-from DrumX.State import AppState
+from DrumX.AppState import AppState
 from DrumX.utils import log
 import os
-
-# Menu Imports
-from cli.Menus import MainMenu, KitMenu
 
 def run():
     FILENAME = os.path.basename(__file__)
@@ -23,8 +20,14 @@ def run():
 
     # Database Load Sequence
     db = Database.get_instance()
+    print(db)
+    print(db)
+    print(db)
+    print(db)
+    print(db)
 
     # Load Sounds
+    engine.load_last_session_kit()
     engine.load_sound("DP1", "sounds/kick.wav")
     engine.load_sound("DP2", "sounds/HH 1.wav")
     engine.load_sound("DP3", "sounds/SNARE 1.wav")
@@ -33,12 +36,7 @@ def run():
     
     log(f"<{FILENAME}> Loop Started")
     
-    app.set_menu(MainMenu)
-    # menu = app.get_menu()
-    
     try:
-        # menu()
-        # Database.get_instance().save_kit("test")
         while True:
             pass
     except KeyboardInterrupt:
