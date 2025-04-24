@@ -10,7 +10,7 @@ import os
 import argparse
 import sys
 
-def run():
+def init():
     FILENAME = os.path.basename(__file__)
     FILEPATH = os.path.dirname(__file__)
     
@@ -35,22 +35,7 @@ def run():
 
     inputhandler.start_listening()
     
-    log(f"<{FILENAME}> Loop Started")
-    
-    try:
-        simple_gui = DrumXSimpleGUI.get_instance()
-        simple_gui.run()
-        while True:
-            pass
-    except KeyboardInterrupt:
-        log(f"<{FILENAME}> Interrupted by user", color="red")
-    finally:
-        try:
-            inputhandler.stop()
-            Database.get_instance().close()
-        except Exception as e:
-            log(f"Error stopping input handler: {e}", color="red")
-        log(f"<{FILENAME}> Main Loop Stopped")
+    return inputhandler, engine
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="DrumX Drumpad Application")
@@ -59,8 +44,23 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
 
-    # if args.gui:
-        # from DrumX.GUI.GUI import GUI
-        # gui = GUI()
-        # gui.run()
-    run()
+    inputhandler, engine = init()
+
+    try:
+        if args.gui:
+            simple_gui = DrumXSimpleGUI.get_instance()
+            simple_gui.run()
+        else:
+            log("<main.py> Loop Started")
+            while True:
+                pass
+    except KeyboardInterrupt:
+        log("<main.py> Interrupted by user", color="red")
+    finally:
+        try:
+            inputhandler.stop()
+            Database.get_instance().close()
+        except Exception as e:
+            log(f"Error stopping input handler: {e}", color="red")
+        log("<main.py> Main Loop Stopped")
+
