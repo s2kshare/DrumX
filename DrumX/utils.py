@@ -1,4 +1,5 @@
 import time
+import os
 
 def consoleprint(message, color=None):
     colors = {
@@ -23,3 +24,6 @@ def log(message, color="yellow"):
 
     with open("log.txt", "a") as f:
         f.write(f"[{time.strftime('%H:%M:%S')}] {message}\n")
+
+def clear():
+    os.system('cls' if os.name == 'nt' else 'clear')

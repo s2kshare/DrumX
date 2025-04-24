@@ -44,7 +44,6 @@ class AudioEngine:
 
     def load_last_session_kit(self):
         kit, profiles = Database.get_instance().load_initial_data()
-        print(kit, profiles)
 
     def play_sound(self, btn_id):
         """

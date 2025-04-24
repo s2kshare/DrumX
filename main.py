@@ -3,7 +3,7 @@ from DrumX.InputHandler import InputHandler
 from DrumX.AudioEngine import AudioEngine
 from DrumX.Controller import Controller
 from DrumX.AppState import AppState
-from DrumX.utils import log
+from DrumX.utils import log, clear
 from DrumX.GUI import DrumXSimpleGUI
 
 import os
@@ -13,6 +13,8 @@ import sys
 def run():
     FILENAME = os.path.basename(__file__)
     FILEPATH = os.path.dirname(__file__)
+    
+    clear()
     log(f"<{FILENAME}> Starting {FILENAME}")
 
     # Initialize Engines
@@ -24,11 +26,6 @@ def run():
 
     # Database Load Sequence
     db = Database.get_instance()
-    print(db)
-    print(db)
-    print(db)
-    print(db)
-    print(db)
 
     # Load Sounds
     engine.load_last_session_kit()

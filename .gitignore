@@ -1,3 +1,4 @@
 .venv
-
-./log.txt
+DrumX/__pycache__
+DrumX/__pycache__/*
+log.txt
