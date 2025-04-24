@@ -30,28 +30,21 @@ class AudioEngine:
             quit()
         
         pygame.mixer.init()
+        self.master_volume = 1
         self.bpm = bpm
         self.sounds = {}  # Dictionary of btn_id -> pygame.mixer.Sound
         self.active_loops = {}  # Dictionary of btn_id -> threading.Event
         self.beat_interval = 60 / self.bpm
     
-
-
     def load_sound(self, btn_id, filepath):
-        """
-        Load a sound file and associate it with a btn_id.
-        
-        Parameters:
-        btn_id (str): The identifier for the sound.
-        filepath (str): The path to the sound file to be loaded.
-        """
-        sound = pygame.mixer.Sound(filepath)  # Load the sound from the given filepath
-        self.sounds[btn_id] = sound  # Store the sound in the dictionary with its btn_id
+        sound = pygame.mixer.Sound(filepath)
+        sound.set_volume(self.master_volume)  # Apply current volume
+        self.sounds[btn_id] = sound
+
 
     def load_last_session_kit(self):
         kit, profiles = Database.get_instance().load_initial_data()
         print(kit, profiles)
-
 
     def play_sound(self, btn_id):
         """
@@ -131,6 +124,19 @@ class AudioEngine:
         """
         self.bpm = bpm
         self.beat_interval = 60 / bpm
+    
+    def set_master_volume(self, volume):
+        """
+        Set the master volume for all sounds.
+
+        Parameters:
+        volume (float): Volume level between 0.0 (mute) and 1.0 (full volume)
+        """
+        self.master_volume = max(0.0, min(volume, 1.0))  # Clamp between 0.0 and 1.0
+        for sound in self.sounds.values():
+            sound.set_volume(self.master_volume)
+
+
 
     def kill(self):
         """
