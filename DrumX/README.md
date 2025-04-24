@@ -15,4 +15,4 @@ on_press
         the method used within the listening thread to capture input.
 ```
 
-# Buttons
+# GUI
